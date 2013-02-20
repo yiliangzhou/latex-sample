@@ -33,8 +33,9 @@
 
 % This section is how we create mathmatic equations using LaTeX.
 \section*{Mathmatics}
+% we use ~\ref{label name} to reference a figure's number
 Equation~\ref{eq:newton} is a displayed equation.\\ 
-\begin{equation} \label{eq:newton}
+\begin{equation} \label{eq:newton} % define a label for current equation
 f(x_{n+1}) = f(x_{n}) - \frac{f(x_{n})}{f\prime(x_{n})}
 \end{equation}
 
@@ -46,8 +47,10 @@ $p(x) = \sum\limits_{i=1}^{n+1} y_{i}\varphi_{i}(x) =
 % This section is how we create a tree using LaTeX and qtree package.
 \section*{Tree}
 \begin{figure}[h!]
-\Tree [.sentence [.np [.art the ] [.n fair ] ] [.vs answers ] [.nps [.ns questions ] ] ] 
-% left space before ]
+\Tree [.sentence [.np [.art the ] [.n fair ] ] 
+      [.vs answers ] 
+      [.nps [.ns questions ] ] ] 
+% when defining a tree, a space should be left before ]
 \caption{The parse tree of a sentence using our modified grammar.}
 \label{fig:unique}
 \end{figure}
@@ -58,9 +61,9 @@ $p(x) = \sum\limits_{i=1}^{n+1} y_{i}\varphi_{i}(x) =
 \centering
    \begin{tabular}{|l|l|l|l|}
         \hline
-        ~             & Top-down & Bottom-up & Top-down Chart\\ \hline
+        ~         & Top-down & Bottom-up & Top-down Chart\\ \hline
         sentence: & 3      & 7      & 3  \\ 
-        np :          & 5      & 6      & 3 \\
+        np :      & 5      & 6      & 3 \\
         \hline
     \end{tabular}
 \caption{Comparision of three parsers.}
@@ -86,6 +89,7 @@ Figure~\ref{fig:lagbasis} is a picture we input from a file.
 Refer to Figure~\ref{fig:vandermat} for the implementation of a method
 producing a vandermone matrix given a row vector. \\*
 
+% setting how code is shown below.
 \lstset{frame=single, basicstyle=\footnotesize\ttfamily, 
 commentstyle=\color{dkgreen},  breaklines = true, numbers=left,  
 numberstyle=\color{gray}, keywordstyle=\color{blue}}
