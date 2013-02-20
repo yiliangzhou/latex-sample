@@ -5,9 +5,9 @@ My LaTeX sample files
 
 usage
 ========
-To build the sample pdfs by yourself, you need have latex, dvips, ps2pdf,
+To build the sample pdfs by yourself, you need to have latex, dvips, ps2pdf,
 xpdf, and make installed.
 
-To build, simple run `make PDF`. This should create two files, one for 
-`not_so_simple.pdf`, the other for `simple.pdf`. 
+To build, simply run `make PDF`. This should create two pdf files for you.
+One is `not_so_simple.pdf`, and the other is `simple.pdf`. 
 
